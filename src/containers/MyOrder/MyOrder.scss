@@ -1,0 +1,92 @@
+@import "../../global";
+
+.myOrder {
+  width: 360px;
+  padding: 24px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  background-color: $color-4;
+  top: 60px;
+  bottom: 0;
+  border-radius: 6px;
+  border: 1px solid $color-secundary;
+  height: 100vh;
+
+  &-header {
+    display: flex;
+    margin-bottom: 15px;
+    & img {
+      transform: rotate(180deg);
+      margin-right: 14px;
+      cursor: pointer;
+    }
+    &__title {
+      font-size: $font-lg;
+      font-weight: bold;
+    }
+  }
+
+  &-content {
+    
+    &__orders {
+      overflow-y: scroll;
+      max-height: 400px;
+      margin-bottom: 20px;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $color-3;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: red;
+      }
+    }
+
+    &__total {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      align-items: center;
+      background-color: $color-4;
+      margin-bottom: 24px;
+      border-radius: 8px;
+      padding: 0 24px;
+
+      & p:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+      }
+      & p span:nth-child(1) {
+        font-size: $font-md;
+        font-weight: bold;
+      }
+      & p:nth-child(2) {
+        text-align: end;
+        font-weight: bold;
+        font-size: $font-md;
+        color: $color-primary;
+      }
+    }
+
+    &__button {
+      background-color: $color-primary;
+      border-radius: 8px;
+      border: none;
+      color: $color-4;
+      width: 100%;
+      cursor: pointer;
+      font-size: $font-md;
+      font-weight: bold;
+      height: 50px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .MyOrder {
+    width: 100%;
+  }
+}

@@ -1,0 +1,88 @@
+@import "../../global";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid $color-secundary;
+  position: sticky;
+  top: 0;
+  background-color: $color-4;
+
+  .nav-menu__mobile {
+    display: none;
+  }
+
+  .nav-logo {
+    width: 100px;
+  }
+
+  .nav-left {
+    display: flex;
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-left: 12px;
+      display: flex;
+      align-items: center;
+      height: 60px;
+    }
+    & ul li a {
+      @include menu-a;
+    }
+    & ul li a:hover {
+      @include menu-a-hover;
+    }
+  }
+
+  .nav-right {
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      height: 60px;
+    }
+    &__email {
+      margin: 12px;
+      cursor: pointer;
+      @include menu-a;
+    }
+    &__email:hover {
+      @include menu-a-hover;
+    }
+    &__cart {
+      position: relative;
+      cursor: pointer;
+    }
+    &__cart div {
+      width: 16px;
+      height: 16px;
+      background-color: $color-primary;
+      border-radius: 50%;
+      font-size: $font-sm;
+      font-weight: bold;
+      position: absolute;
+      top: -6px;
+      right: -3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 780px) {
+    .nav-menu__mobile {
+      display: block;
+      cursor: pointer;
+    }
+    .nav-left ul {
+      display: none;
+    }
+    .nav-right__email {
+      display: none;
+    }
+  }
+}

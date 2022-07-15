@@ -1,0 +1,35 @@
+$font-sm: 1.4rem;
+$font-md: 1.6rem;
+$font-lg: 1.8rem;
+$color-primary: #acd9b2;
+$color-secundary: #c7c7c7;
+$color-3: #000000;
+$color-4: #ffffff;
+
+// ----------------------------------------
+
+@mixin menu-a {
+  text-decoration: none;
+  color: $color-secundary;
+  border: 1px solid $color-4;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: $font-sm;
+}
+
+@mixin menu-a-hover {
+  border: 1px solid $color-primary;
+  color: $color-primary;
+}
+
+// ------------------------------------------
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Quicksand", sans-serif;
+}
