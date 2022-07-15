@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/polombia-store-web/static/css/main.f2dbb114.css",
-    "main.js": "/polombia-store-web/static/js/main.83fcd4c9.js",
+    "main.js": "/polombia-store-web/static/js/main.27cb0a64.js",
     "static/media/logo_yard_sale.svg": "/polombia-store-web/static/media/logo_yard_sale.f5c1d07e0dba172463639e02bacccd32.svg",
     "static/media/bt_added_to_cart.svg": "/polombia-store-web/static/media/bt_added_to_cart.ac33eec52215a7cb4613b5daa37f0532.svg",
     "static/media/bt_add_to_cart.svg": "/polombia-store-web/static/media/bt_add_to_cart.c13587f7a917cacfc4722859eba06bca.svg",
@@ -11,10 +11,10 @@
     "static/media/icon_menu.svg": "/polombia-store-web/static/media/icon_menu.3aa38c5e16715afedfa9b1adb8607b7d.svg",
     "static/media/flechita.svg": "/polombia-store-web/static/media/flechita.e419d8c93e852173b9b8261835467277.svg",
     "main.f2dbb114.css.map": "/polombia-store-web/static/css/main.f2dbb114.css.map",
-    "main.83fcd4c9.js.map": "/polombia-store-web/static/js/main.83fcd4c9.js.map"
+    "main.27cb0a64.js.map": "/polombia-store-web/static/js/main.27cb0a64.js.map"
   },
   "entrypoints": [
     "static/css/main.f2dbb114.css",
-    "static/js/main.83fcd4c9.js"
+    "static/js/main.27cb0a64.js"
   ]
 }
